@@ -1,0 +1,54 @@
+.sort {
+    display: flex;
+    position: relative;
+    align-items: center;
+    /* width: 232px; */
+}
+
+.sort__label img {
+    margin-right: 7px;
+}
+
+.sort__label b{
+    margin-right: 5px;
+}
+
+.sort__label span {
+    color: #fe5f1e;
+    border-bottom: 1px dashed #fe5f1e;
+    cursor: pointer;
+    /* min-width: 93px; */
+}
+
+.sort__pop-up {
+    position: absolute;
+    right: 0px;
+    top: 45px;
+    width: 132px;
+    height: 136px;
+    border-radius: 10px;
+    padding: 13px 0;
+    background-color: white;
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sort__pop-up ul {
+    width: 100%;
+}
+
+.sort__pop-up ul li {
+    list-style: none;
+    height: 38px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 12px 20px
+}
+
+.sort__pop-up ul li.active {
+    background-color: rgba(255, 128, 0, 0.05);
+    color: #fe5f1e;
+}

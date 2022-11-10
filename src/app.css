@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;   
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFDF8C;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1340px;
+    height: 100%;
+    margin: 63px 45px 63px 45px;
+    background-color: white;
+    border-radius: 10px;
+   
+}

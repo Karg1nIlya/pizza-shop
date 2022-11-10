@@ -1,0 +1,24 @@
+.categories ul {
+    display: flex;
+    align-items: center;
+}
+
+.categories ul li {
+    margin-right: 11px;
+    list-style: none;
+    background-color: #f9f9f9;
+    width: auto;
+    height: 46px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 13px 30px;
+}
+
+.categories ul li.active {
+    background-color: black;
+    color: white;
+}
