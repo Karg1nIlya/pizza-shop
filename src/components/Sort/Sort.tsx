@@ -2,6 +2,8 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { Context } from "../context/context";
 import "./sort.css"
 
+const arrowTop = require("../../img/arrow-top.svg")
+
 interface ISort {
     onSort: (param: string) => void
 }
@@ -40,14 +42,13 @@ export function Sort({onSort}: ISort) {
         arr.set(param, 'active')
         setArrSort(arr)
         sortRef.current = paramSort
-        console.log(sortRef.current)
         onSort(param)
     }
 
     return (
         <div ref={sortLink} className="sort">
             <div className="sort__label">
-                <img id='arrow-top' src="./img/arrow-top.svg" alt="arrow-top"/>
+                <img id='arrow-top' src={arrowTop} alt="arrow-top"/>
                 <b>Сортировка по:</b>
                 <span onClick={ setVisibleLabel }>{paramSort}</span>
             </div>

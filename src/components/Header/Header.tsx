@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { Context } from "../context/context";
 import "./header.css"
 
-const logo = require("../../../public/img/image 1.svg")
-const cart = require("../../../public/img/cart.svg")
+const logo = require("../../img/image 1.svg")
+const cart = require("../../img/cart.svg")
 
 export function Header() {
     const {state} = useContext(Context)
@@ -24,7 +24,6 @@ export function Header() {
                         <span>{state.sumCart} ₽</span>
                         <div className="button-cart__delimeter"></div>
                         <img src={cart} alt="cart-logo"/>
-                        {/* <span>{cartRef.current.length}</span> */}
                         <span>{state.count}</span>
                     </Link>
                 </div>

@@ -5,6 +5,10 @@ import { Context } from "../../context/context";
 import { CartPizzaList } from "../CartPizzaList/CartPizzaList";
 import "./cart.css"
 
+const cartBlack = require("../../../img/cart-black.jpg")
+const trash = require("../../../img/trash.svg")
+const vector = require("../../../img/vector .svg")
+
 interface ICartComp {
     onUpdateCart: () => void
 }
@@ -43,11 +47,11 @@ export function Cart({onUpdateCart}: ICartComp) {
             <div className="container">
                 <div className="cart__top">
                     <h1 className="cart__title">
-                        <img src="./img/cart-black.jpg" alt="cart" />
+                        <img src={cartBlack} alt="cart" />
                         Корзина
                     </h1>
                     <div className="cart__clear" onClick={clearCart}>
-                        <img src="./img/trash.svg" alt="trash" />
+                        <img src={trash} alt="trash" />
                         <span>Очистить корзину</span>
                     </div>
                 </div>
@@ -62,7 +66,7 @@ export function Cart({onUpdateCart}: ICartComp) {
                 </div>
                 <div className="cart__bottom-buttons">
                     <Link to="/">
-                        <img src="./img/vector .svg" alt=""/>
+                        <img src={vector} alt=""/>
                         На главную
                     </Link>
                     <button>Оплатить сейчас</button>

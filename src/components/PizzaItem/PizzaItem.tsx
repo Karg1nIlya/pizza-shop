@@ -69,7 +69,6 @@ export function PizzaItem({elem}: IPizzaItem) {
             }
             cartRef.current.forEach((el:ICart) => {
                 if(el.name === pizzaTmp.name && el.size === pizzaTmp.size && el.type === pizzaTmp.type) {
-                    console.log(el)
                     el.count++
                     flag.ind=true
                 }

@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import { ICart } from "../../../../models";
 import { Context } from "../../context/context";
+import "./cartPizzaItem.css"
 
 interface ICartPizzaItem {
     pizza: ICart,

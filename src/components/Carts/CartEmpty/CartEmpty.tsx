@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./cartEmpty.css"
 
-const emptyCart = require("../../../../public/img/empty-cart.png")
+const emptyCart = require("../../../img/empty-cart.png")
 
 export function CartEmpty() {
     return (
